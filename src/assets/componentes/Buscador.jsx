@@ -13,7 +13,7 @@ const Buscador = ({ setBuscando }) => {
             <input
                 type="text"
                 className="input"
-                placeholder="Buscar por nombre"
+                placeholder="    Buscar por nombre"
                 value={ingresoValor}
                 onChange={ingresoDeValor}
             />

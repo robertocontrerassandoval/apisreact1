@@ -26,7 +26,7 @@ const MiApi = () => {
             };
         
             consultarApi();
-        },[]  );
+        },[]  );   // el callBack se llama solo en el montaje erreglo vacio no depende de nada
 
 
 
@@ -37,7 +37,8 @@ const MiApi = () => {
         feriado.date.toLowerCase().includes(buscando.toLowerCase() ||
         feriado.type.toLowerCase().includes(buscando.toLowerCase())));
         setFeriadosFiltrados(feriadosFiltrados);
-    }, [buscando, feriados]); //busqueda con condicion
+    }, [buscando, feriados]); //busqueda con condicion de dependencia, solo
+    // se ejecuta cuando se llame a las variables de estado buscando y feriados
 
 
     const filtradoSort = () => {
